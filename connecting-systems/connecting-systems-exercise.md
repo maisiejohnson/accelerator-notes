@@ -43,7 +43,7 @@ Proxy servers act as an intermediary between the client and servers twhen the cl
 - Forward rpoxies monitor network traffic on both the client side and web-server sides, meaning that all data from the client and web-servers are routed through the proxy.
 - Forward proxies act as a security barrier between clients and the internet to protect clients' computers from any cyber attacks, by monitoring incoming and outgoing traffic in a network system to detect suspicious activity and protect client data.
 - A forward proxy can provide proxy services to a group of clients on a common internal network like the one shown below.
-  ![](./connecting-systems/forward_proxy-3-5.png.webp)
+  ![](./forward_proxy-3-5.png.webp)
 
 ---
 
