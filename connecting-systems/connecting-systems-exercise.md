@@ -1,4 +1,4 @@
-# Network Devices
+# NETWORK DEVICES
 
 ---
 
@@ -31,7 +31,18 @@ Dynamic load balacing algorithms take into account the current load of each of t
 
 ---
 
-# Proxies
+# Proxy Servers
+
+Proxy servers act as an intermediary between the client and servers twhen the client makes a request for some resources or services. Proxies help to increase privacy, security and performance. There are 2 main types of proxies: forward proxies and reverse proxies.
+
+## Forward Proxies
+
+- A forward proxy is used to recieved and forward client connection requests to some final destination web-server.
+- A forward proxy sits between the client and the internet, and establishes a connection to the internet on behalf of the client.
+- Forward proxies recieve connection requests from the client and ensure that said requests are valid before forwarding them to their target website on behalf of the client. If a request made by the client is invalid it will redirect it back to the client without processing it.
+- Forward rpoxies monitor network traffic on both the client side and web-server sides, meaning that all data from the client and web-servers are routed through the proxy.
+- Forward proxies act as a security barrier between clients and the internet to protect clients' computers from any cyber attacks, by monitoring incoming and outgoing traffic in a network system to detect suspicious activity and protect client data.
+- A forward proxy can provide proxy services to a group of clients on a common internal network like the one shown below.
 
 ---
 
