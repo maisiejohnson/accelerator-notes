@@ -44,7 +44,50 @@ Proxy servers act as an intermediary between the client and servers twhen the cl
 - Forward proxies act as a security barrier between clients and the internet to protect clients' computers from any cyber attacks, by monitoring incoming and outgoing traffic in a network system to detect suspicious activity and protect client data.
 - A forward proxy can provide proxy services to a group of clients on a common internal network like the one shown below.
   ![](./forward_proxy-3-5.png.webp)
+- In this case the forward proxy acts as an intermediary for all devices on the network. Thus the proxy can serve as a single point of access and control making it easier to enfore authentication, SSL encryption or other security policies.
+
+## Reverse Proxies
+
+- As the name implies, a reverse proxy does the opposite of a forward proxy. Whilst a forward proxy operates on behalf of clients, a reverse proxy operates on behalf of the servers placed behind it. This schematic setup is shown in the diagram below.
+  ![](./reverse_proxy-resized-600-21.png.webp)
+- Any client recieving a request response from a reverse proxy is completely oblivious to the servers behind it, that are actually providiing the service. As such, a reverse proxy masks the identity of the servers and thus makes it much more difficult for internet-based hackers to aquire sensitive data from the servers.
+- Due to their positioning, reverse proxies can also act as load balancers for the servers behind them, and indeed this what happens in most cases.
 
 ---
 
 ## Firewalls
+
+A firewall is a network security device that monitors incoming and outgoing network traffic and decides whether to allow or block specific traffic based on a pre-defined set of security rules. As such, firewalls are very important in protecting computer systems from attack.
+
+Firewalls can be software or hardware - for maximum security it's best to have both. A **software firewall** is a program installed on a given computer that regulates traffic through port numbers and applications, while a phsyical firewall is a piece of equipment installed between a given network and a gateway.
+
+There are several types of firewall. Some examples include:
+
+### Proxy Firewall:
+
+A proxy firewall is a network security system that protects network resources by filtering messages at the application layer (layer 7 of the OSI model). It serves as a gateway from one network to another and thus can be installed on an organisation's network or on a remote server to provide security for the internal network by monitoring and blocking traffic transmitted to and from the internet. All proxy firewalls are proxy servers, but not all proxy servers are proxy firewalls.
+
+Proxy firewalls can help accomplish the following:
+
+- ensure that only authorised users have access to the resources of a computer network.
+- filter out unwantred messages and packets on an internet network.
+- protect against network intrusion
+- restrict access to sensitive sites or sites that are only relevant to specific users, e.g, preventing employees from using social media websites during working hours.
+
+Proxy firewalls can be installed in the network itself (i.e., between the internet and the internal network), or on each individual computer.
+
+### Statefull Inspection Firewall:
+
+Stateful inspection firewalls are now through of as 'traditional firewalls'. These firewalls allow or block network traffic based on state, port and protocol (i.e., on layer 4 information). All activity from the oppening of a connection until the closing of a connection is monitored by the stateful inspection firewall, with filtering decisions being made based on a set of administrator defined rules.
+
+### Next Generation Firewall:
+
+A next genertion firewall (NGFW) does everything that a stateful inspection firewall does, and more. In addition to stateful inspection, NGFWs can filter packets based on applications and can inspect the data contained in the packets (rather than just the IP address headers). Thus, NGFWs can operate from layer 4 (transport layer) up to level 7 (the application layer) of the OSI model.
+
+Next generation firewall features include:
+
+- **Application awareness:** traffic can be filtered based on application rather than just on port, with traffic from cenrtain applications being blocked.
+- **Deep-packet inspection:** the data contained in packets is inspection as well as the port.
+- **Intrusion prevention sysems:** monitoring the network for malicious activity and blocking it activity when it occurs. Such monitoring can be signature based (i.e., matching activity to the signatures of well known threats), policy based (i.e., blocking activty that violates security policy) or anomoly based.
+- **High performance:** this allows the NGFW to monitor high volumes of network traffic without slowdown. This is an especially important feature considering that some of the security features of NGFWs require proccessing time.
+- **External threat intelligence:** communication with a theat intelligence network to insure that threat information is up to date.
