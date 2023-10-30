@@ -131,5 +131,5 @@
       return x ** 3
 
   print(cubed(3).__doc__)
-  >>> 'This returns the cube of a given number
+  >>> 'This returns the cube of a given number'
   ```
