@@ -16,11 +16,11 @@
 - Such functions are called **inner functions**.
 - Inner functions are not defined until the parent function is called, as they are locally scoped to the parent - i.e., they only exist inside the parent function as local variables.
 
-## What is a Decorator?
+## Decorators
 
 - A decorator is a function that takes another function and extends the behaviour of that function without explicitly modifying the function.
 
-### Basic Syntax
+### Basic Decorators Syntax
 
 - In decorators, functions are taken as the argument into another function and then called inside the wrapper function, which is defined inside the decorator function. For example:
 
