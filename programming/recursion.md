@@ -78,7 +78,8 @@ def count_nested_list_items(input_list):
 - **Memoization** speeds up the execution of expensive recursive functions by storing previously calculated results in a cache.
 - Thus, when a second recursive call with the same input is made, the function just has to look up the corresponding result and return it without having to run the computation again. Such results can be referred to as **memoized** or **cached**.
 - With memoization, you only have to traverse up the call tree of depth n once after returning from the base case. For example, consider a function that calculates the nth Fibonacci number. Using memoization the results retrieved from the cache are shown in yellow below, and the orange path shows that no input to the Fibonacci sequence is called more than once.
-  ![](./images/memoization.webp)
+  |![](./images/memoization.webp)|
+  |:---:|
 - This significantly reduces the time complexity of the algorithm.
 
 ### Implementing Memoization with a Decorator
