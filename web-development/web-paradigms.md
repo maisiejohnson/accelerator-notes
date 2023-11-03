@@ -45,3 +45,9 @@ There are 3 paradigms for web content delivery:
   - Can be very slow to load if the JavaScript file is very large
   - Site is totally useless without a client that executes JavaScript
   - Not search engine friendly as browsers can't understand JavaScript
+
+## Hydration
+
+- You can use varying amounts of JavaScript with each of the paradigms
+- Sometimes you might want to bring interaction to a static or SSR website using JavaScript
+- The process of doing this is called **hydration**
